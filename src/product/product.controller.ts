@@ -25,6 +25,10 @@ export class ProductController {
   findAll() {
     return this.productService.findAll();
   }
+  @Get('search')
+  searchByName(@Query('name') name: string) {
+    return this.productService.searchByName(name);
+  }
 
   @Get('filter')
   filter(

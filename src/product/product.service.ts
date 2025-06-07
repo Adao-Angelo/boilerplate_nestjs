@@ -21,6 +21,20 @@ export class ProductService {
     });
   }
 
+  async searchByName(name: string): Promise<Product[]> {
+    return this.prisma.product.findMany({
+      where: {
+        name: {
+          contains: name,
+          mode: 'insensitive',
+        },
+      },
+      include: {
+        company: true,
+      },
+    });
+  }
+
   async findAll(): Promise<Product[]> {
     return this.prisma.product.findMany({ include: { company: true } });
   }
