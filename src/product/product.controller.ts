@@ -1,4 +1,3 @@
-// src/product/product.controller.ts
 import {
   Body,
   Controller,
