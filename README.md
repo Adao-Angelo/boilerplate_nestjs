@@ -19,8 +19,8 @@ This is a basic API boilerplate built with **NestJS** version `10.4.4`, using **
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Adao-Angelo/boilerplate_nestjs.git
+cd boilerplate_nestjs
 ```
 
 ### 2. Install Dependencies
